@@ -1,0 +1,70 @@
+{
+  "nav-bar" : {
+    "about" : "SOBRE MÍ",
+    "experiences" : "EXPERIENCIAS",
+    "projects" : "PROYECTOS",
+    "contact" : "CONTACTO"
+  },
+  "hero" : {
+    "hello" : "Hola !",
+    "my-name" : "Mi nombre es",
+    "im-front" : "Soy desarrolladora Front End :)"
+  },
+  "about" : {
+    "about" : "SOBRE MÍ",
+    "years" : "Tengo 23 años,",
+    "from" : "soy de ",
+    "argentina" : "Argentina 🌞",
+    "currently" : "y actualmente vivo en Bélgica.",
+    "thanks-to" : "Gracias a las diferentes experiencias de estos últimos años, aprendí a ser autodidacta, \n a poder adaptarme fácilmente a nuevos lugares y equipos de trabajo, y a desarrollar \n una reflexión orientada a la resolución de problemas.",
+    "content-creator" : "Haber trabajado como creadora de contenido para redes sociales, \n me ayudó a mejorar mis habilidades en diseño y a tener muy presente los detalles.",
+    "code-design" : "Codigo y diseño es lo que más disfruto de hacer 💻.",
+    "languages" : "Hablo español, inglés y francés.",
+    "work-motivation" : "Más que motivada en poner en practicas mis conocimientos y a seguir aprendiendo 💪."
+  },
+  "studies-works" : {
+    "studies" : "ESTUDIOS",
+    "work-exp" : "EXPERIENCIA LABORAL"
+  },
+  "studies" : {
+    "belgium" : "(Bélgica)",
+    "web-app" : "Desarrolladora de aplicaciones web \n (formación de tiempo completo con duración de 6 meses).",
+    "git-hub" : "- 'GitHub para programadores' curso orientado al aprendizaje de GitHub. \n - 'Diseño para programación esencial' curso orientado a la combinación de diseño y codigo.",
+    "javascript" : "Curso 'Algoritmos JavaScript y estructuras de datos'.",
+    "charleroi-belgium" : "Charleroi, Bélgica",
+    "courses-technofutur" : "- Curso 'Introducción a Html, Css y JavaScript'. \n - Curso 'Python y algoritmos'.",
+    "courses-convierte" : "- 'Más Contenidos' curso de creación de contenido en redes sociales. \n - 'Más ADS' curso orientado a estrategias publicitarias en Facebook e Instagram. \n - 'Más Marketing' curso de marketing y publicidad en redes sociales.",
+    "university-cordoba" : "UNIVERSIDAD NACIONAL DE CÓRDOBA",
+    "cordoba-argentine" : "Córdoba, Argentina",
+    "photography" : "Curso de fotografía."
+  },
+  "works" : {
+    "internship" : "PRÁCTICAS - NEARMI",
+    "charleroi" : "(Charleroi, Bélgica - 6 SEMANAS)",
+    "experience-nearmi" : "Diseño web y desarrollo front end. \n Herramientas y stacks utilizadas: Figma, React, Typescript, Chakra, Sass.",
+    "charleroi-belgium" : "(Charleroi, Bélgica)",
+    "experience-freelancer" : "Marketing digital y creador de contenidos para redes sociales.",
+    "flaine" : "(Flaine, Francia)",
+    "experience-flaine" : "Responsable de servir el bar y atender las mesas, limpieza de las habitaciones y zonas comunes del hotel.",
+    "carnac" : "(Carnac, Francia)",
+    "experience-carnac" : "- Limpieza de habitaciones y zonas comunes del hotel."
+  },  
+  "stacks" : {
+    "interests" : "INTERÉS EN..",
+    "animations" : "ANIMACIONES", 
+    "graphic" : "DISEÑO GRÁFICO"
+  },
+  "projects" : {
+    "projects" : "PROYECTOS",
+    "landing-page" : "Portafolio",
+    "about-landing" : "Proyecto personal responsivo.",
+    "coming-soon" : "PRÓXIMAMENTE NUEVOS PROYECTOS, ESTOY TRABAJANDO EN ELLO :)"
+  },
+  "contact" : {
+    "contact-me" : "CONTÁCTAME",
+    "tooltip-email" : "Lista para comenzar un nuevo desafío, envíame un email :)",
+    "tooltip-linkedin" : "Conectémonos en Linkedin!",
+    "tooltip-github" : "Echa un vistazo a mi código en GitHub 😊",
+    "tooltip-resume" : "Descarga mi curriculum 📄"
+  }
+}
