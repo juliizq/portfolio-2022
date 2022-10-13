@@ -7,7 +7,9 @@ export default function Languages () {
 
   const handleLangChange = (e: any) => {
     const language = e.target.value
-    i18n.changeLanguage(language)
+    i18n.changeLanguage(language).catch((error) => {
+      console.error(error)
+    })
   }
 
   return (

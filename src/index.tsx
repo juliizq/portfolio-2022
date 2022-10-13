@@ -25,6 +25,8 @@ i18next.init({
       global: globalFr
     }
   }
+}).catch((error) => {
+  console.error(error)
 })
 
 const root = ReactDOM.createRoot(
