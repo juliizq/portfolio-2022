@@ -15,8 +15,7 @@ import ScrollToTop from 'react-scroll-to-top'
 import './App.css'
 import ReactGA from 'react-ga'
 
-const TRACKING_ID = "UA-246174197-1";
-ReactGA.initialize(TRACKING_ID)
+ReactGA.initialize(process.env.REACT_APP_TRACKING_ID!)
 
 function App () {
   useEffect(() => {
