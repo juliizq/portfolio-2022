@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Box, ChakraProvider } from '@chakra-ui/react'
 import backgroundAura from './assets/background+aura.png'
 import Hero from './components/Hero/Hero'
@@ -13,8 +13,16 @@ import Footer from './components/Footer'
 import StudiesExperiences from './components/StudiesWorks/StudiesWorks'
 import ScrollToTop from 'react-scroll-to-top'
 import './App.css'
+import ReactGA from 'react-ga'
+
+const TRACKING_ID = "UA-246174197-1";
+ReactGA.initialize(TRACKING_ID)
 
 function App () {
+  useEffect(() => {
+  ReactGA.pageview(window.location.pathname + window.location.search)
+  }, [])
+
   return (
       <ChakraProvider theme={customTheme}>
         <Box className="App"
