@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
-import { Box, ChakraProvider } from '@chakra-ui/react'
-import backgroundAura from './assets/background+aura.png'
+import React, { useEffect, useState } from 'react'
+import { Box, Center, ChakraProvider } from '@chakra-ui/react'
+import gradient from './assets/gradient.png'
 import Hero from './components/Hero/Hero'
 import customTheme from './theme'
 import Header from './components/Header'
@@ -14,6 +14,7 @@ import StudiesExperiences from './components/StudiesWorks/StudiesWorks'
 import ScrollToTop from 'react-scroll-to-top'
 import './App.css'
 import ReactGA from 'react-ga'
+import { Player } from '@lottiefiles/react-lottie-player'
 
 ReactGA.initialize(process.env.REACT_APP_TRACKING_ID!)
 
@@ -22,11 +23,31 @@ function App () {
     ReactGA.pageview(window.location.pathname + window.location.search)
   }, [])
 
+  const [loading, setLoading] = useState(false)
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 3500)
+  }, [])
+
   return (
       <ChakraProvider theme={customTheme}>
-        <Box className="App"
-          backgroundImage={backgroundAura}
-          backgroundPosition="center"
+        <Box className="App">
+        { loading
+          ? (
+            <Center h={'100vh'}>
+            <Player src='https://assets9.lottiefiles.com/packages/lf20_KTwV2Rb118.json'
+              className="player"
+              loop
+              autoplay
+              style={{ height: '300px', width: '300px' }}
+              />
+             </Center>
+            )
+          : (
+        <Box backgroundImage={gradient}
+          backgroundSize={'cover'}
           px={['3', '8', '10']}>
           <Header />
           <Languages />
@@ -79,7 +100,11 @@ function App () {
             </Box>
             </Box>
             <Footer />
-          </Box>
+            </Box>
+            )
+      }
+      </Box>
+
       </ChakraProvider>
   )
 }
