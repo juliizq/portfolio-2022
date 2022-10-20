@@ -26,8 +26,7 @@ export default function Projects () {
           flexDirection={'column'}
           flexGrow={'2'}
           textAlign={{ base: 'center', md: 'start', lg: 'start' }}
-          justifyContent='center'
-          mt={['20px', '']}>
+          justifyContent='center'>
           <InfoProject
             title={t('projects.landing-page')}
             description={t('projects.about-landing')}/>
