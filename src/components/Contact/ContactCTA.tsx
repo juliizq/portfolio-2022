@@ -16,8 +16,8 @@ export default function ContactCTA ({ tooltipLabel, leftIcon, onClick, children 
       <Button
         size={'lg'}
         variant='outline'
-        borderColor='primary'
-        border='2px'
+        borderColor='black'
+        border={['1px', '2px']}
         borderRadius='30px'
         color='black'
         bgColor='white'

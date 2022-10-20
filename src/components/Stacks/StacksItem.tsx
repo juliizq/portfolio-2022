@@ -6,11 +6,11 @@ export default function StacksItem ({ child, className }: IStacksItem) {
   return (
     <Flex
       display={'inline-flex'}
-      borderColor='primary'
-      borderWidth='2px'
+      borderColor='black'
+      border={['1px', '2px']}
       borderRadius='30px'
       bgColor='white'
-      fontSize={{ base: 'sm', md: 'md', lg: '2xl' }}
+      fontSize={{ base: 'md', md: 'lg', lg: '2xl' }}
       p={'2px 8px'}
       position={'absolute'}
       top={['35%', '45%']}

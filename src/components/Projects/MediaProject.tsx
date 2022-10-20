@@ -9,8 +9,8 @@ export default function MediaProject () {
       objectFit={'contain'}
       borderRadius={'30px'}
       p={'15px 15px'}
-      border={'2px'}
-      borderColor={'secondary'}
+      border={['1px', '2px']}
+      borderColor={'black'}
       // h={['auto']}
       // maxW={['50%','30%','40%']}
       backgroundColor={'white'}

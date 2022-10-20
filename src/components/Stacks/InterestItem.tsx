@@ -7,13 +7,13 @@ export default function InterestItem ({ child, className }: IInterestItem) {
     <Flex
       display={'inline-flex'}
       justifyContent={'center'}
-      borderColor='primary'
-      borderWidth='2px'
+      borderColor='black'
+      border={['1px', '2px']}
       borderRadius='30px'
       bgColor='white'
       mb={'5px'}>
       <Text
-        fontSize={{ base: 'sm', md: 'md', lg: '2xl' }}
+        fontSize={{ base: 'md', md: 'lg', lg: '2xl' }}
         p={'2px 8px'}>
         {child}
       </Text>
