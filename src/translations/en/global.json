@@ -56,8 +56,10 @@
   },
   "projects" : {
     "projects" : "PROJECTS",
-    "landing-page" : "Portfolio",
-    "about-landing" : "Responsive personal project.",
+    "portfolio" : "Portfolio",
+    "about-portfolio" : "Responsive website animated with GSAP. Design made in Figma and organization of tasks with Jira.",
+    "landing-agency" : "Agency Landing Page",
+    "about-agency" : "Responsive website.",
     "coming-soon" : "SOON NEW PROJECTS, I'M WORKING ON THEM :)"
   },
   "contact" : {

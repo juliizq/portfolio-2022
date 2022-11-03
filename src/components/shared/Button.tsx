@@ -4,7 +4,7 @@ import { IButton } from '../../interfaces/IButton'
 
 const sizes = {
   sm: {
-    fontSize: '15px'
+    fontSize: '13px'
   },
   md: {
     fontSize: '18px'

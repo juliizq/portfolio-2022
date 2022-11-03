@@ -1,43 +1,69 @@
 import React from 'react'
 import { Box, Flex } from '@chakra-ui/react'
 import Heading from '../shared/Heading'
-import InfoProject from './InfoProject'
-import MediaProject from './MediaProject'
-import SharedButton from '../shared/Button'
 import { useTranslation } from 'react-i18next'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper'
+import Portfolio from './Portfolio'
+import LandingAgency from './LandingAgency'
 
 export default function Projects () {
   const [t, i18n] = useTranslation('global')
 
   return (
     <Box>
-      <Heading child={t('projects.projects')}/>
       <Flex
-        flexDirection={{ base: 'column', md: 'row', lg: 'row' }}
-        padding={{ md: '0px 120px' }}>
+        flexDirection={'column'}
+        >
+        <Heading child={t('projects.projects')}/>
         <Flex
-          flex={['', '3']}
-          p={['30px']}
-          justifyContent={{ base: 'center', md: 'center', lg: 'center' }}>
-          <MediaProject />
+          flexGrow={'1'}
+          >
+          <Swiper
+            cssMode={true}
+            navigation={true}
+            pagination={false}
+            mousewheel={true}
+            keyboard={true}
+            modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+            className="mySwiper"
+            >
+            <SwiperSlide><Portfolio /></SwiperSlide>
+            <SwiperSlide><LandingAgency /></SwiperSlide>
+          </Swiper>
         </Flex>
         <Flex
-           flex={['', '3']}
-          flexDirection={'column'}
-          flexGrow={'2'}
-          textAlign={{ base: 'center', md: 'start', lg: 'start' }}
-          justifyContent='center'>
-          <InfoProject
-            title={t('projects.landing-page')}
-            description={t('projects.about-landing')}/>
-          <Box mt={'10px'}>
-            <SharedButton child='GSAP'/>
-            <SharedButton child='CHAKRA UI'/>
-            <SharedButton child='REACT'/>
-            <SharedButton child='TYPESCRIPT'/>
-          </Box>
+           mt={['10px']}
+           justifyContent={'center'}
+           position='relative'>
+          <Flex
+            display={'inline-flex'}
+            bgColor='primary'
+            color='white'
+            borderRadius={'30px'}
+            fontSize={{ base: 'xs', md: 'md', lg: 'md' }}
+            fontWeight={'500'}
+            p={'5px 10px'}>
+            {t('projects.coming-soon')}
+          </Flex>
         </Flex>
       </Flex>
+      {/* <Heading child={t('projects.projects')}/>
+      <Swiper
+        cssMode={true}
+        navigation={true}
+        pagination={false}
+        mousewheel={true}
+        keyboard={true}
+        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        className="mySwiper"
+        >
+        <SwiperSlide><Portfolio /></SwiperSlide>
+        <SwiperSlide><LandingAgency /></SwiperSlide>
+      </Swiper>
       <Box
         mt={{ base: '50px', md: '20px', lg: '40px' }}
         textAlign={'center'}
@@ -51,8 +77,8 @@ export default function Projects () {
           fontWeight={'500'}
           p={'5px 10px'}>
           {t('projects.coming-soon')}
-        </Flex>
-      </Box>
+        </Flex> */}
+      {/* </Box> */}
     </Box>
   )
 }

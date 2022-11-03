@@ -1,18 +1,16 @@
 import React from 'react'
 import { Image } from '@chakra-ui/react'
-import Portfolio from '../../assets/Portfolio-preview.png'
+import { IMediaProject } from '../../interfaces/IMediaProject'
 
-export default function MediaProject () {
+export default function MediaProject ({ media }: IMediaProject) {
   return (
     <Image
-      src={Portfolio}
+      src={media}
       objectFit={'contain'}
       borderRadius={'30px'}
       p={'15px 15px'}
       border={['1px', '2px']}
       borderColor={'black'}
-      // h={['auto']}
-      // maxW={['50%','30%','40%']}
       backgroundColor={'white'}
     />
   )
