@@ -66,17 +66,16 @@ export default function Studies () {
           where={t('studies.charleroi-belgium')}
           body={t('studies.courses-technofutur')}/>
       </Box>
-
       <Box ref={el3}>
         <Year child='< 2020'/>
         <CardStudies
           title='CONVIERTE MÁS'
           where='(Online)'
           body={t('studies.courses-convierte')}/>
-        <CardStudies
+        {/* <CardStudies
           title={t('studies.university-cordoba')}
           where={t('studies.cordoba-argentine')}
-          body={t('studies.photography')}/>
+          body={t('studies.photography')}/> */}
       </Box>
     </Box>
   )

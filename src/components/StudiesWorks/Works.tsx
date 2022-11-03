@@ -58,7 +58,7 @@ export default function WorkExp () {
           where={t('works.charleroi-belgium')}
           body={t('works.experience-freelancer')}/>
       </Box>
-      <Box ref={el3}>
+      {/* <Box ref={el3}>
         <Year child='< 2020'/>
         <CardStudies
           title='HOTEL MMV 3*'
@@ -68,7 +68,7 @@ export default function WorkExp () {
           title='HOTEL LE CELTIQUE 4*'
           where={t('works.carnac')}
           body={t('works.experience-carnac')}/>
-      </Box>
+      </Box> */}
 
     </Box>
   )
