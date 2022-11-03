@@ -31,8 +31,8 @@ export default function Projects () {
             modules={[Navigation, Pagination, Mousewheel, Keyboard]}
             className="mySwiper"
             >
-            <SwiperSlide><Portfolio /></SwiperSlide>
             <SwiperSlide><LandingAgency /></SwiperSlide>
+            <SwiperSlide><Portfolio /></SwiperSlide>
           </Swiper>
         </Flex>
         <Flex
@@ -45,40 +45,12 @@ export default function Projects () {
             color='white'
             borderRadius={'30px'}
             fontSize={{ base: 'xs', md: 'md', lg: 'md' }}
-            fontWeight={'500'}
+            fontWeight={'600'}
             p={'5px 10px'}>
             {t('projects.coming-soon')}
           </Flex>
         </Flex>
       </Flex>
-      {/* <Heading child={t('projects.projects')}/>
-      <Swiper
-        cssMode={true}
-        navigation={true}
-        pagination={false}
-        mousewheel={true}
-        keyboard={true}
-        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-        className="mySwiper"
-        >
-        <SwiperSlide><Portfolio /></SwiperSlide>
-        <SwiperSlide><LandingAgency /></SwiperSlide>
-      </Swiper>
-      <Box
-        mt={{ base: '50px', md: '20px', lg: '40px' }}
-        textAlign={'center'}
-        position='relative'>
-        <Flex
-          display={'inline-flex'}
-          bgColor='white'
-          color='black'
-          borderRadius={'30px'}
-          fontSize={{ base: 'xs', md: 'md', lg: 'md' }}
-          fontWeight={'500'}
-          p={'5px 10px'}>
-          {t('projects.coming-soon')}
-        </Flex> */}
-      {/* </Box> */}
     </Box>
   )
 }

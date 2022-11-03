@@ -1,4 +1,4 @@
-import { Box, Flex } from '@chakra-ui/react'
+import { Box, Flex, Link } from '@chakra-ui/react'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import SharedButton from '../shared/Button'
@@ -30,7 +30,8 @@ export default function Portfolio () {
       <InfoProject
         title={t('projects.portfolio')}
         description={t('projects.about-portfolio')}
-        url='https://portfolio-juliana-izquierdo.vercel.app/'
+        urlProject='https://portfolio-juliana-izquierdo.vercel.app/'
+        urlGit='https://github.com/juliizq/portfolio-juliana-izquierdo'
         />
       <Box mt={'10px'}>
         <SharedButton child='GSAP'/>

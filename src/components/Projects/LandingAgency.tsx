@@ -32,7 +32,8 @@ export default function LandingAgency () {
           <InfoProject
             title={t('projects.landing-agency')}
             description={t('projects.about-agency')}
-            url='https://agency-landing-react-ts.vercel.app/'
+            urlProject='https://agency-landing-react-ts.vercel.app/'
+            urlGit='https://github.com/juliizq/agency-landing'
             />
           <Box mt={'10px'}>
             <SharedButton child='CHAKRA UI'/>
