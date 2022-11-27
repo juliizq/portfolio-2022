@@ -3,7 +3,7 @@ import '@fontsource/inter'
 
 const customTheme = extendTheme({
   config: {
-    initialColorMode: 'light',
+    initialColorMode: 'system',
     useSystemColorMode: false
   },
   colors: {
