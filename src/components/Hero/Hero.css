@@ -1,7 +1,45 @@
-.blinking{
-  animation: opacity 1.2s ease-in-out infinite;
-  opacity: 1;
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .underline{
+    text-decoration: underline 3px ;
+    -webkit-text-decoration-line: underline !important;
+    -webkit-text-decoration-thickness: 3px !important;
+  }
 }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .underline{
+    text-decoration: underline 3px;
+    -webkit-text-decoration-line: underline !important;
+    -webkit-text-decoration-thickness: 3px !important;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .underline{
+    text-decoration: underline 3px;
+    -webkit-text-decoration-line: underline !important;
+    -webkit-text-decoration-thickness: 3px !important;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .underline{
+    text-decoration: underline 4px;
+    -webkit-text-decoration-line: underline !important;
+    -webkit-text-decoration-thickness: 4px !important;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .underline{
+    text-decoration: underline 4px;
+    -webkit-text-decoration-line: underline !important;
+    -webkit-text-decoration-thickness: 4px !important;
+  }
+}
+
 
 @keyframes opacity {
   0% {

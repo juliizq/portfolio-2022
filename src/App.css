@@ -10,17 +10,7 @@ html, body {
   scroll-behavior: smooth;
 }
 
-/* .App {
-  scroll-snap-type: mandatory;
-  scroll-snap-points-y: repeat(100vh);
-  scroll-snap-type: y mandatory;
-  height: 100vh;
-  overflow: auto;
-} */
-
 section{
-  scroll-snap-align: start;
-  height: 100vh;
   position: relative;
 }
 

@@ -1,5 +1,5 @@
-import { Box, Flex } from '@chakra-ui/react'
-import { ReactComponent as Logo } from '../../assets/logo-juliana.svg'
+import { Box, Flex, Text } from '@chakra-ui/react'
+import Logo from './Logo'
 import Menu from './Menu'
 
 export default function NavBar () {
@@ -7,14 +7,9 @@ export default function NavBar () {
 		<Flex
 			textAlign={'center'}
 			alignItems={'center'}
-			zIndex={'999'}>
-				<Box
-					position={'fixed'}
-					left={{ base: '5px', md: '25px' }}
-					top={['13px', '10px', '5px']}
-					h={['50px', '80px', '100px']}>
-					<Logo width={'150px'} height={'100%'}/>
-				</Box>
+			zIndex={'999'}
+			>
+				<Logo />
 				<Flex
 					position={'fixed'}
 					justifyContent={'flex-end'}

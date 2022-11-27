@@ -5,6 +5,7 @@ import { IItemDesktop } from '../../interfaces/IItemDesktop'
 export default function ItemMenu ({ child }: IItemDesktop) {
   return (
     <Box
+			color={'black'}
 			cursor={'pointer'}
 			style={{ textDecoration: 'none' }}
 		  display={'inline-block'}

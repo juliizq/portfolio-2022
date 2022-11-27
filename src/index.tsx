@@ -11,9 +11,11 @@ import globalEs from './translations/es/global.json'
 import globalEn from './translations/en/global.json'
 import globalFr from './translations/fr/global.json'
 
+const language = localStorage.getItem('language')
+
 i18next.init({
   interpolation: { escapeValue: false },
-  lng: 'en',
+  lng: language ?? 'en',
   resources: {
     en: {
       global: globalEn
@@ -35,9 +37,8 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <I18nextProvider i18n={i18next}>
-       <App />
+      <App />
     </I18nextProvider>
-
   </React.StrictMode>
 )
 

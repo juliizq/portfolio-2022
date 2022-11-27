@@ -1,25 +1,22 @@
-import React, { useEffect, useRef } from 'react'
-import { Box, Flex, Text } from '@chakra-ui/react'
-import gsap from 'gsap'
-import { useTranslation } from 'react-i18next'
-import Heading from './shared/Heading'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { Flex, Text } from "@chakra-ui/react";
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useTranslation } from "react-i18next";
 
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 
-export default function About () {
-  const [t, i18n] = useTranslation('global')
-  const tl = gsap.timeline()
-  const el1 = useRef(null)
-  const el2 = useRef(null)
-  const el3 = useRef(null)
-  const el4 = useRef(null)
-  const el5 = useRef(null)
-  const el6 = useRef(null)
-  const el7 = useRef(null)
-  const el8 = useRef(null)
-  const el9 = useRef(null)
-  const el10 = useRef(null)
+export default function About() {
+  const [t, i18n] = useTranslation("global");
+  const tl = gsap.timeline();
+  const el1 = useRef(null);
+  const el2 = useRef(null);
+  const el3 = useRef(null);
+  const el4 = useRef(null);
+  const el5 = useRef(null);
+  const el6 = useRef(null);
+  const el7 = useRef(null);
+  const el8 = useRef(null);
 
   useEffect(() => {
     const els = [
@@ -31,60 +28,72 @@ export default function About () {
       el6.current,
       el7.current,
       el8.current,
-      el9.current,
-      el10.current
-    ]
-    const tween = gsap.fromTo(els, {
-      y: 100,
-      opacity: 0,
-      ease: 'power1.out',
-      duration: 1,
-      skewY: 10,
-      stagger: 0.5
-    }, {
-      scrollTrigger: els,
-      x: 0,
-      y: 0,
-      duration: 1,
-      opacity: 1,
-      skewY: 0,
-      ease: 'power1.out',
-      stagger: 0.5
-    }
-    )
+    ];
+    const tween = gsap.fromTo(
+      els,
+      {
+        y: 100,
+        opacity: 0,
+        ease: "power1.out",
+        duration: 1,
+        skewY: 10,
+        stagger: 0.3,
+      },
+      {
+        scrollTrigger: els,
+        x: 0,
+        y: 0,
+        duration: 1,
+        opacity: 1,
+        skewY: 0,
+        ease: "power1.out",
+        stagger: 0.3
+      }
+    );
 
     return () => {
-      tween.kill()
-    }
-  }, [])
+      tween.kill();
+    };
+  }, []);
 
   return (
     <Flex
-      pt={'15px'}
-      textAlign={'center'}
-      h={'100%'}
-      flexDirection={'column'}
-      justifyContent={'center'}
-      py={['50px', '']}>
-      <Box ref={el1}><Heading child={t('about.about')}/></Box>
-      <Box fontSize={{ base: 'sm', md: 'xl', lg: '2xl' }} whiteSpace={'pre-wrap'}>
-        <Text ref={el2}>{t('about.years')}</Text>
-        <Text ref={el3}>
-          {t('about.from')}{t('about.argentina')}
-          {/* <Box as={'span'} color='primary'> {t("about.argentina")}</Box> */}
-        </Text>
-        <Text ref={el5}>{t('about.currently')}</Text>
+      p={["0 5%", "0 7%", "0 10%"]}
+      flexDirection={["column"]}
+      justifyContent={["center"]}
+      textAlign={"center"}
+      position={"relative"}
+    >
+      <Text
+        mt={["10px"]}
+        fontSize={{ base: "lg", md: "xl", lg: "2xl", xl: "3xl" }}
+        lineHeight={["1.3rem", "1.4rem", "1.7rem", "1.9rem", "2.3rem"]}
+        whiteSpace={"pre-wrap"}
+      >
+        <span ref={el1}>{t("about.years")}</span>
         <br />
-        <Text ref={el6}>{t('about.thanks-to')}</Text>
+        <span ref={el2}>
+          {t("about.from")}
+          {t("about.argentina")}
+        </span>
         <br />
-        <Text ref={el7}>{t('about.content-creator')}</Text>
+        <span ref={el3}>{t("about.currently")}</span>
         <br />
-        <Text ref={el8}>{t('about.code-design')}</Text>
         <br />
-        <Text ref={el9}>{t('about.languages')}</Text>
+        <span ref={el4}>{t("about.thanks-to")}</span>
         <br />
-        <Text ref={el10}>{t('about.work-motivation')}</Text>
-      </Box>
+        <br />
+        <span ref={el5}>{t("about.content-creator")}</span>
+        <br />
+        <br />
+        <span ref={el6}>{t("about.code-design")}</span>
+        <br />
+        <br />
+        <span ref={el7}>{t("about.languages")}</span>
+        <br />
+        <br />
+        <span ref={el8}>{t("about.work-motivation")}</span>
+      </Text>
     </Flex>
-  )
+  );
 }

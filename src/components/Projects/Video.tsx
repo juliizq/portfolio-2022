@@ -11,7 +11,7 @@ export default function Video () {
       borderColor={'black'}
       backgroundColor={'white'}
       >
-      <video width="100%" height="100%" preload='auto' autoPlay muted loop playsInline>
+      <video width="100%" height="100%" preload='auto' autoPlay muted loop playsInline poster='../../assets/Landing-preview.png'>
         <source src={LandingPreview} type="video/mp4" />
           Your browser does not support the video.
         </video>

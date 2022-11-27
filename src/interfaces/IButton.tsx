@@ -8,4 +8,5 @@ export interface IButton {
   size?: string
   className?: string
   position?: React.CSSProperties
+  bgColor:string
 }

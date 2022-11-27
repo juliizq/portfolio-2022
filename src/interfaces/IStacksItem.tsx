@@ -1,4 +1,4 @@
 export interface IStacksItem {
-  child?: string
-  className?: string
+  bgColor: string
+  child: string
 }

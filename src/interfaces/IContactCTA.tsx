@@ -5,4 +5,5 @@ export interface IContactCTA {
   leftIcon?: ReactElement
   onClick?: () => void
   children?: ReactElement
+  bgColor?: string
 }

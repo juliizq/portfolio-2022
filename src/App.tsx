@@ -1,112 +1,125 @@
-import React, { useEffect, useState } from 'react'
-import { Box, Center, ChakraProvider } from '@chakra-ui/react'
-import gradient from './assets/gradient.png'
-import Hero from './components/Hero/Hero'
-import customTheme from './theme'
-import Header from './components/Header'
-import Languages from './components/Languages'
-import About from './components/About'
-import Contact from './components/Contact/Contact'
-import Projects from './components/Projects/Projects'
-import Stacks from './components/Stacks/Stacks'
-import Footer from './components/Footer'
-import StudiesExperiences from './components/StudiesWorks/StudiesWorks'
-import ScrollToTop from 'react-scroll-to-top'
-import './App.css'
-import ReactGA from 'react-ga'
-import { Player } from '@lottiefiles/react-lottie-player'
+import React, { useEffect, useState } from "react";
+import { Box, Center, ChakraProvider, Flex } from "@chakra-ui/react";
+import Hero from "./components/Hero/Hero";
+import customTheme from "./theme";
+import Header from "./components/Header";
+import Languages from "./components/Languages";
+import Contact from "./components/Contact/Contact";
+import Projects from "./components/Projects/Projects";
+import Footer from "./components/Footer";
+import ScrollToTop from "react-scroll-to-top";
+import "./App.css";
+import ReactGA from "react-ga";
+import { Player } from "@lottiefiles/react-lottie-player";
+import About from "./components/About";
+import Stacks from "./components/Stacks/Stacks";
+import Experiences from "./components/Experiences/Experiences";
 
-ReactGA.initialize(process.env.REACT_APP_TRACKING_ID!)
+ReactGA.initialize(process.env.REACT_APP_TRACKING_ID!);
 
-function App () {
+
+function App() {
+
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search)
-  }, [])
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
-    setLoading(true)
     setTimeout(() => {
-      setLoading(false)
-    }, 3500)
-  }, [])
+      setLoading(false);
+    }, 3100);
+  }, []);
 
   return (
-      <ChakraProvider theme={customTheme}>
-        <Box className="App">
-        { loading
-          ? (
-            <Center h={'100vh'}>
-            <Player src='https://assets9.lottiefiles.com/packages/lf20_KTwV2Rb118.json'
+    <ChakraProvider theme={customTheme}>
+      <Box className="App">
+        {loading ? (
+          <Center h={"100vh"}>
+            <Player
+              src="https://assets9.lottiefiles.com/packages/lf20_KTwV2Rb118.json"
               className="player"
               loop
               autoplay
-              style={{ height: '300px', width: '300px' }}
-              />
-             </Center>
-            )
-          : (
-        <Box backgroundImage={gradient}
-          backgroundSize={'cover'}
-          px={['3', '8', '10']}>
-          <Header />
-          <Languages />
-          <Box as='main' zIndex={'-999'}>
-            <Box
-              bottom={{ base: '15px', md: '20px' }}
-              right={{ base: '10px', md: '20px' }}>
-              <ScrollToTop
-              smooth
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                backgroundColor: 'transparent',
-                bottom: 'inherit',
-                right: 'inherit'
-              }}
-              />
-            </Box>
-            <Box as='section'
-              id='hero'>
-              <Hero />
-            </Box>
-            <Box as='section'
-              pt={['15px', '']}
-              id='about'>
-              <About />
-            </Box>
-            <Box as='section'
-              h={['160vh', '100vh']}
-              pt={'50px'}
-              id='studies'>
-              <StudiesExperiences />
-            </Box>
-            <Box as='section'
-              pt={'50px'}
-              id='stacks'
-              overflow={'hidden'}>
-              <Stacks />
-            </Box>
-            <Box as='section'
-              id='projects'
-              pt={'65px'}>
-              <Projects />
-            </Box>
-            <Box as='section'
-              h={['97vh']}
-              id='contact'>
-              <Contact />
-            </Box>
+              style={{ height: "300px", width: "300px" }}
+            />
+          </Center>
+        ) : (
+          <Box>
+            <Header />
+            <Box as="main" zIndex={"-999"}>
+              <Flex
+                justifyContent={"space-between"}
+                bottom={{ base: "15px", md: "20px" }}
+                right={{ base: "10px", md: "20px" }}
+              >
+                <ScrollToTop
+                  smooth
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    backgroundColor: "transparent",
+                    bottom: "inherit",
+                    right: "inherit",
+                    boxShadow: "none",
+                  }}
+                />
+                <Languages />
+              </Flex>
+              <Box as="section" id="hero" h={"100vh"}>
+                <Hero />
+              </Box>
+              <Box
+                as="section"
+                id="about"
+                pt={["15px", ""]}
+                top={["-60px", "-65px", "-80px"]}
+                h={"100vh"}
+                mb={["10px", "20px", "40px"]}
+              >
+                <About />
+              </Box>
+              <Box
+                id="studies"
+                as="section"
+                // h={'100vh'}
+                p={["0 3%", "0 3%", "0 5%"]}
+                mb={["10px", "20px", "30px"]}
+              >
+                <Experiences />
+              </Box>
+              <Flex
+                p={["0 3%", "0 3%", "0 5%"]}
+                as="section"
+                id="stacks"
+                flexDirection={"column"}
+                justifyContent={"center"}
+                h={"100vh"}
+                mb={["10px", "20px"]}
+              >
+                <Stacks />
+              </Flex>
+              <Flex
+                as="section"
+                id="projects"
+                h={"100vh"}
+                p={["0 3%", "0 3%", "0 5%"]}
+                flexDirection={"column"}
+                justifyContent={"center"}
+              >
+                <Projects />
+              </Flex>
+              <Box as="section" h={["97vh"]} id="contact">
+                <Contact />
+              </Box>
             </Box>
             <Footer />
-            </Box>
-            )
-      }
+          </Box>
+        )}
       </Box>
-
-      </ChakraProvider>
-  )
+    </ChakraProvider>
+  );
 }
 
-export default App
+export default App;

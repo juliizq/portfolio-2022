@@ -1,7 +1,7 @@
 import { Box, Flex, Link } from '@chakra-ui/react'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import SharedButton from '../shared/Button'
+import SharedButton from '../shared/SharedButton'
 import InfoProject from './InfoProject'
 import MediaProject from './MediaProject'
 import PortfolioPreview from '../../assets/Portfolio-preview.png'
@@ -34,10 +34,10 @@ export default function Portfolio () {
         urlGit='https://github.com/juliizq/portfolio-juliana-izquierdo'
         />
       <Box mt={'10px'}>
-        <SharedButton child='GSAP'/>
-        <SharedButton child='CHAKRA UI'/>
-        <SharedButton child='REACT'/>
-        <SharedButton child='TYPESCRIPT'/>
+        <SharedButton child='GSAP' bgColor='lila'/>
+        <SharedButton child='CHAKRA UI' bgColor='turquoise'/>
+        <SharedButton child='REACT' bgColor='pink'/>
+        <SharedButton child='TYPESCRIPT' bgColor='green'/>
       </Box>
     </Flex>
   </Flex>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Flex } from '@chakra-ui/react'
 import { useTranslation } from 'react-i18next'
-import SharedButton from '../shared/Button'
+import SharedButton from '../shared/SharedButton'
 import InfoProject from './InfoProject'
 import Video from './Video'
 
@@ -36,9 +36,9 @@ export default function LandingAgency () {
             urlGit='https://github.com/juliizq/agency-landing'
             />
           <Box mt={'10px'}>
-            <SharedButton child='CHAKRA UI'/>
-            <SharedButton child='REACT'/>
-            <SharedButton child='TYPESCRIPT'/>
+            <SharedButton child='CHAKRA UI' bgColor='pink'/>
+            <SharedButton child='REACT' bgColor='green'/>
+            <SharedButton child='TYPESCRIPT' bgColor='blue'/>
           </Box>
         </Flex>
       </Flex>

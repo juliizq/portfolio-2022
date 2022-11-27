@@ -1,11 +1,16 @@
 {
   "nav-bar" : {
-    "about" : "ABOUT",
-    "experiences" : "EXPERIENCES",
-    "projects" : "PROJECTS",
-    "contact" : "CONTACT"
+    "about" : "about",
+    "experiences" : "experiences",
+    "projects" : "projects",
+    "contact" : "contact"
   },
   "hero" : {
+    "code" : "Code",
+    "and" : "and",
+    "design" : "design.",
+    "create" : "Create",
+    "develop" : "develop.",
     "hello" : "Hello !",
     "my-name" : "My name is",
     "im-front" : "I'm a Front End Developer :)"
@@ -23,39 +28,40 @@
     "work-motivation" : "More than motivated to put into practice my knowledge and to continue learning 💪."
   },
   "studies-works" : {
-    "studies" : "STUDIES",
-    "work-exp" : "WORK EXPERIENCE"
+    "studies" : "studies",
+    "work-exp" : "work experience"
   },
   "studies" : {
-    "belgium" : "(Belgium)",
-    "web-app" : "Web App Developer \n (full training of 6 months).",
-    "git-hub" : "- 'GitHub para programadores' course aimed at learning GitHub. \n - 'Diseño para programación esencial' course aimed at combining design and code.",
-    "javascript" : "Course 'JavaScript algorithms \n and data structures'.",
+    "belgium" : "Charleroi, Belgium",
+    "web-app" : "Web App Developer, full training of 6 months.",
+    "git-hub" : "• 'GitHub para programadores' course aimed at learning GitHub. \n• 'Diseño para programación esencial' course aimed at combining design and code.",
+    "javascript" : "•  Course 'JavaScript algorithms and data structures'.",
     "charleroi-belgium" : "Charleroi, Belgium",
-    "courses-technofutur" : "- Course 'Introduction to Html, Css and JavaScript'. \n - Course 'Python and algorithms'.",
-    "courses-convierte" : "- 'Más Contenidos' course aimed at creating content on social networks. \n - 'Más ADS' course geared towards advertising strategies on Facebook and Instagram. \n - 'Más Marketing' course aimed at marketing and advertising on social networks.",
+    "courses-technofutur" : "• Course 'Introduction to Html, Css and JavaScript'. \n• Course 'Python and algorithms'.",
+    "courses-convierte" : "• 'Más Contenidos' course aimed at creating content on social networks. \n• 'Más ADS' course geared towards advertising strategies on Facebook and Instagram. \n• 'Más Marketing' course aimed at marketing and advertising on social networks.",
     "university-cordoba" : "NATIONAL UNIVERSITY OF CORDOBA",
     "cordoba-argentine" : "Córdoba, Argentine",
     "photography" : "Photography course."
   },
   "works" : {
     "internship" : "INTERNSHIP - NEARMI",
-    "charleroi" : "(Charleroi, Belgium - 6 WEEKS)",
-    "experience-nearmi" : "Web design and front end development. \n Tools and technologies used: Figma, React, Typescript, Chakra, Sass.",
-    "charleroi-belgium" : "(Charleroi, Belgium)",
+    "charleroi" : "Charleroi, Belgium - 6 WEEKS",
+    "experience-nearmi" : "Web design and front end development. \nTools and technologies used: Figma, React, Typescript, Chakra, Sass.",
+    "charleroi-belgium" : "Charleroi, Belgium",
     "experience-freelancer" : "Digital marketing and content creator for social networks.",
-    "flaine" : "(Flaine, France)",
+    "flaine" : "Flaine, France",
     "experience-flaine" : "Responsible for serving the bar and tables, cleaning the rooms and common areas of the hotel.",
-    "carnac" : "(Carnac, France)",
+    "carnac" : "Carnac, France",
     "experience-carnac" : "Cleaning rooms and common areas of the hotel."
   },
   "stacks" : {
-    "interests" : "INTEREST IN..",
+    "interests" : "interest in",
     "animations" : "ANIMATIONS", 
-    "graphic" : "GRAPHIC DESIGN"
+    "graphic" : "GRAPHIC DESIGN",
+    "responsive" : "RESPONSIVE DESIGN"
   },
   "projects" : {
-    "projects" : "PROJECTS",
+    "projects" : "projects",
     "portfolio" : "Portfolio",
     "about-portfolio" : "Responsive website animated with GSAP. Design made in Figma and organization of tasks with Jira.",
     "landing-agency" : "Agency Landing Page",
@@ -63,7 +69,7 @@
     "coming-soon" : "SOON NEW PROJECTS, I'M WORKING ON THEM :)"
   },
   "contact" : {
-    "contact-me" : "CONTACT ME",
+    "contact-me" : "Let's get in touch!",
     "tooltip-email" : "Ready to start a new challenge, send me an email :)",
     "tooltip-linkedin" : "Let's connect on Linkedin!",
     "tooltip-github" : "Take a look at my code on GitHub 😊",
