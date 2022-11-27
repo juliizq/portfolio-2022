@@ -4,7 +4,7 @@ import '@fontsource/inter'
 const customTheme = extendTheme({
   config: {
     initialColorMode: 'light',
-    useSystemColorMode: true,
+    useSystemColorMode: false
   },
   colors: {
     primary: '#5C2DFF',
