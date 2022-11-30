@@ -51,8 +51,8 @@ export default function ContactCTA ({ tooltipLabel, leftIcon, onClick, children,
         p={'6px 15px'}
         onClick={onClick}
               _active={{
-          bg: `${theme.bgColor}`
-        }}
+                bg: `${theme.bgColor}`
+              }}
         _hover={{
           bg: `${theme.bgColor}`
         }}

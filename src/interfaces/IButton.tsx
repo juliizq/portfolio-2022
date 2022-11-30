@@ -1,4 +1,4 @@
-import { ReactElement, ReactNode } from 'react'
+import { ReactElement } from 'react'
 
 export interface IButton {
   child?: string
@@ -8,5 +8,5 @@ export interface IButton {
   size?: string
   className?: string
   position?: React.CSSProperties
-  bgColor:string
+  bgColor: string
 }

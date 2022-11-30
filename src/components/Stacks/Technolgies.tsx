@@ -1,65 +1,45 @@
-import { Flex } from "@chakra-ui/react";
-import React, { useEffect, useRef } from "react";
-import Title from "../shared/Title";
-import StackItem from "./StackItem";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Flex } from '@chakra-ui/react'
+import React, { useRef } from 'react'
+import Title from '../shared/Title'
+import StackItem from './StackItem'
+import { motion, useInView } from 'framer-motion'
 
-gsap.registerPlugin(ScrollTrigger);
+export default function Technolgies () {
+  const ref = useRef(null)
+  const isInView = useInView(ref)
 
-export default function Technolgies() {
-  const el1 = useRef(null);
-
-  useEffect(() => {
-    const els = [el1.current];
-    const tween = gsap.fromTo(
-      els,
-      {
-        x: 500,
-        opacity: 0,
-        duration: 2,
-        ease: "power2.out",
-        trigger: ".trigger",
-        skewY: 3,
-        stagger: 0.3,
-      },
-      {
-        scrollTrigger: {
-          trigger: ".trigger",
-          // markers: true,
-          // start: "top center",
-          end: "center center-=100",
-          scrub: true
-        },
-        x: 0,
-        y: 0,
-        duration: 2,
-        ease: "power2.out",
-        opacity: 1,
-        skewY: 0,
-        stagger: 0.3,
+  const containerVariants = {
+    hidden: {
+      opacity: 0,
+      x: '100px'
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        type: 'spring',
+        duration: 2
       }
-    );
-
-    return () => {
-      tween.kill();
-    };
-  }, []);
+    }
+  }
 
   return (
     <Flex
-      flexDirection={"column"}
-      flex={["4"]}
-      gap={["3"]}
-      className={"trigger"}
-      ref={el1}
+      as={motion.div}
+      variants={containerVariants}
+      initial={'hidden'}
+      whileInView={'visible'}
+      flexDirection={'column'}
+      flex={['', '', '', '1']}
+      gap={['3']}
+      overflow={'hidden'}
     >
       <Title child="stacks" />
       <Flex
-        flexDirection={"column"}
-        alignItems={"flex-start"}
-        gap={["3"]}
-        ml={["10px", "20px", "30px"]}
+        flexDirection={'column'}
+        alignItems={'flex-start'}
+        gap={['3']}
+        ml={['10px', '20px', '30px']}
       >
         <StackItem bgColor="red" child="FIGMA" />
         <Flex>
@@ -82,5 +62,5 @@ export default function Technolgies() {
         <StackItem bgColor="green" child="GIT" />
       </Flex>
     </Flex>
-  );
+  )
 }

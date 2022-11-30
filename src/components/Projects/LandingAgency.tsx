@@ -12,35 +12,35 @@ export default function LandingAgency () {
     <Flex
       flexDirection={{ base: 'column', md: 'row', lg: 'row' }}
       p={['10px 30px', '10px 40px', '10px 50px', '10px 60px']}
+    >
+      {/* Video */}
+      <Flex
+        flex={['', '5']}
+        p={['15px', '20px', '30px']}
+        justifyContent={['center']}
       >
-        {/* Video */}
-        <Flex
-           flex={['', '5']}
-           p={['15px', '20px', '30px']}
-           justifyContent={['center']}
-           >
-          <Video />
-        </Flex>
-        {/* Info project */}
-        <Flex
-          flex={['', '3']}
-          flexDirection={'column'}
-          flexGrow={'2'}
-          textAlign={{ base: 'center', md: 'start', lg: 'start' }}
-          justifyContent='center'
-          >
-          <InfoProject
-            title={t('projects.landing-agency')}
-            description={t('projects.about-agency')}
-            urlProject='https://agency-landing-react-ts.vercel.app/'
-            urlGit='https://github.com/juliizq/agency-landing'
-            />
-          <Box mt={'10px'}>
-            <SharedButton child='CHAKRA UI' bgColor='pink'/>
-            <SharedButton child='REACT' bgColor='green'/>
-            <SharedButton child='TYPESCRIPT' bgColor='blue'/>
-          </Box>
-        </Flex>
+        <Video />
       </Flex>
+      {/* Info project */}
+      <Flex
+        flex={['', '3']}
+        flexDirection={'column'}
+        flexGrow={'2'}
+        textAlign={{ base: 'center', md: 'start', lg: 'start' }}
+        justifyContent="center"
+      >
+        <InfoProject
+          title={t('projects.landing-agency')}
+          description={t('projects.about-agency')}
+          urlProject="https://agency-landing-react-ts.vercel.app/"
+          urlGit="https://github.com/juliizq/agency-landing"
+        />
+        <Box mt={'10px'}>
+          <SharedButton child="CHAKRA UI" bgColor="pink" />
+          <SharedButton child="REACT" bgColor="green" />
+          <SharedButton child="TYPESCRIPT" bgColor="blue" />
+        </Box>
+      </Flex>
+    </Flex>
   )
 }

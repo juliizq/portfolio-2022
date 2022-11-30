@@ -1,6 +1,6 @@
 export interface IInfoProject {
   title: string
   description: string
-  urlProject:string
-  urlGit:string
+  urlProject: string
+  urlGit: string
 }
