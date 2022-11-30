@@ -33,10 +33,8 @@ function App () {
   return (
     <ChakraProvider theme={customTheme}>
       <Box className="App">
-        {
-        loading
-          ?
-            (
+        {loading
+          ? (
           // <Center h={'100vh'}>
           //   <Player
           //     src="https://assets9.lottiefiles.com/packages/lf20_KTwV2Rb118.json"
@@ -46,9 +44,8 @@ function App () {
           //     style={{ height: '300px', width: '300px' }}
           //   />
           // </Center>
-          <AnimatedLogo />
-            ) : (
-          <Box>
+          <AnimatedLogo />)
+          : (<Box>
             <Header />
             <Box as="main" zIndex={'-999'}>
               <Flex
