@@ -12,7 +12,9 @@ export default function Languages () {
   const handleLangChange = (e: any) => {
     const language = e.target.value
     setCurrentLang(language)
-    i18n.changeLanguage(language)
+    i18n.changeLanguage(language).catch(() => {
+      console.error('Something wrong happens on change language')
+    })
     localStorage.setItem('language', language)
   }
 
