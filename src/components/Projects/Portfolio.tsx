@@ -35,7 +35,7 @@ export default function Portfolio () {
           urlGit="https://github.com/juliizq/portfolio-juliana-izquierdo"
         />
         <Box mt={'10px'}>
-          <SharedButton child="GSAP" bgColor="lila" />
+          <SharedButton child="FRAMER MOTION" bgColor="lila" />
           <SharedButton child="CHAKRA UI" bgColor="turquoise" />
           <SharedButton child="REACT" bgColor="pink" />
           <SharedButton child="TYPESCRIPT" bgColor="green" />
