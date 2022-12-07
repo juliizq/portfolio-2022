@@ -17,7 +17,7 @@
   },
   "about" : {
     "about" : "ABOUT",
-    "years" : "I'm 23 years old,",
+    "about-me" : "I'm 23 years old,\n I am from Argentine 🌞 \n and I currently live in Belgium.",
     "from" : "I am from ",
     "argentina" : "Argentine 🌞",
     "currently" : "and I currently live in Belgium.",

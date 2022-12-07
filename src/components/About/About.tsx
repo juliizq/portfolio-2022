@@ -34,13 +34,8 @@ export default function About () {
       initial={'hidden'}
       animate={'visible'}
     >
-        <AnimatedText text={t('about.years')} />
-        <span>
-          <AnimatedText text={t('about.from')} />
-          <AnimatedText text={t('about.argentina')} />
-        </span>
-        <AnimatedText text={t('about.currently')} />
-        <br />
+        <AnimatedText text={t('about.about-me')} />
+        <br /> 
         <AnimatedText text={t('about.thanks-to')} />
         <br />
         <AnimatedText text={t('about.content-creator')} />
