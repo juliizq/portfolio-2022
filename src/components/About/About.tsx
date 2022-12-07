@@ -34,17 +34,17 @@ export default function About () {
       initial={'hidden'}
       animate={'visible'}
     >
-        <AnimatedText text={t('about.about-me')} />
-        <br /> 
-        <AnimatedText text={t('about.thanks-to')} />
-        <br />
-        <AnimatedText text={t('about.content-creator')} />
-        <br />
-        <AnimatedText text={t('about.code-design')} />
-        <br />
-        <AnimatedText text={t('about.languages')} />
-        <br />
-        <AnimatedText text={t('about.work-motivation')} />
+      <AnimatedText text={t('about.about-me')} />
+      <br />
+      <AnimatedText text={t('about.thanks-to')} />
+      <br />
+      <AnimatedText text={t('about.content-creator')} />
+      <br />
+      <AnimatedText text={t('about.code-design')} />
+      <br />
+      <AnimatedText text={t('about.languages')} />
+      <br />
+      <AnimatedText text={t('about.work-motivation')} />
     </Flex>
   )
 }
