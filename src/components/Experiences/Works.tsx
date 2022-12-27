@@ -1,4 +1,4 @@
-import { Box, Text } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 import React from 'react'
 import { Chrono } from 'react-chrono'
 import { useTranslation } from 'react-i18next'

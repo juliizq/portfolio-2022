@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Box, Center, ChakraProvider, Flex } from '@chakra-ui/react'
+import { Box, ChakraProvider, Flex } from '@chakra-ui/react'
 import Hero from './components/Hero/Hero'
 import customTheme from './theme'
 import Header from './components/Header'

@@ -1,5 +1,5 @@
-import { Flex, Text } from '@chakra-ui/react'
-import React, { useEffect, useRef } from 'react'
+import { Flex } from '@chakra-ui/react'
+import React from 'react'
 import { useTranslation } from 'react-i18next'
 import AnimatedText from './AnimatedText'
 import { motion } from 'framer-motion'
