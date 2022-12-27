@@ -4,7 +4,7 @@ import LandingPreview from '../../assets/LandingPagePreview.mp4'
 import { IVideo } from '../../../interfaces/IVideo'
 import './Video.css'
 
-export default function Video ({poster, src} : IVideo) {
+export default function Video ({ poster, src }: IVideo) {
   return (
     <Flex
       borderRadius={'30px'}
