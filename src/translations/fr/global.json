@@ -67,6 +67,8 @@
     "about-portfolio" : "Web site responsive animé avec GSAP. Design faite en Figma et l'organisation des tâches avec Jira.",
     "landing-agency" : "Agence Landing Page",
     "about-agency" : "Responsive website.",
+    "product-catalog" : "Catalogue de produits",
+    "about-product-catalog" : "Web site responsive qui affiche des produits de la base de données, ceux-ci peuvent être filtrés selon certains critères tels que la couleur, le prix ou la note.",
     "coming-soon" : "BIENTÔT DE NOUVEAUX PROJETS, J'Y TRAVAILLE :)"
   },
   "contact" : {

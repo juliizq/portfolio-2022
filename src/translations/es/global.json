@@ -65,8 +65,10 @@
     "projects" : "proyectos",
     "portfolio" : "Portafolio",
     "about-portfolio" : "Sitio web responsivo animado con GSAP. Diseño realizado en Figma y organización de tareas con Jira.",
-    "landing-agency" : "Agencia Landing Page",
-    "about-agency" : "Sitio web responsive.",
+    "landing-agency" : "Landing Page Agencia",
+    "about-agency" : "Sitio web responsivo.",
+    "product-catalog" : "Catálogo de productos",
+    "about-product-catalog" : "Sitio web responsivo que muestra productos de la base de datos, estos se puede filtran de acuerdo con ciertos criterios como color, precio o calificación.",
     "coming-soon" : "PRÓXIMAMENTE NUEVOS PROYECTOS, ESTOY TRABAJANDO EN ELLO :)"
   },
   "contact" : {

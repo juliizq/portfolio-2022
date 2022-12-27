@@ -3,7 +3,8 @@ import { Box, Flex } from '@chakra-ui/react'
 import { useTranslation } from 'react-i18next'
 import SharedButton from '../shared/SharedButton'
 import InfoProject from './InfoProject'
-import Video from './Video'
+import Video from './Video/Video'
+import LandingPreview from '../../assets/LandingPagePreview.mp4'
 
 export default function LandingAgency () {
   const [t, i18n] = useTranslation('global')
@@ -19,7 +20,7 @@ export default function LandingAgency () {
         p={['15px', '20px', '30px']}
         justifyContent={['center']}
       >
-        <Video />
+        <Video poster='../../assets/Landing-preview.png' src={LandingPreview}/>
       </Flex>
       {/* Info project */}
       <Flex

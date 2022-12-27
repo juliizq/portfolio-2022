@@ -18,9 +18,19 @@ export default function InfoProject ({
             {title}
           </Text>
         </Link>
+        <Tooltip
+          textAlign={'center'}
+          hasArrow
+          placement="top"
+          label={'Website'}
+          bg={'black'}
+          fontSize={{ base: 'sm', md: 'lg', lg: 'xl', xl: '2xl' }}
+          mb="1"
+        >
         <Link href={urlProject} isExternal>
           <Icon as={FiExternalLink} boxSize={['4', '6', '8']} />
         </Link>
+        </Tooltip>
         <Tooltip
           textAlign={'center'}
           hasArrow
