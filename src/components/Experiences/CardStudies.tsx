@@ -6,35 +6,41 @@ export default function CardStudies ({
   title,
   where,
   body,
-  align
+  stacks
 }: ICardStudies) {
   return (
     <Flex
-      w={'100%'}
-      alignItems={'unset'}
+      alignItems={'start'}
       borderRadius={'13px'}
       borderColor={'black'}
-      textAlign={align}
       flexDirection={'column'}
     >
       <Text
         fontWeight={'600'}
-        color={'primary'}
+        color={'black'}
         letterSpacing={'0.8px'}
-        fontSize={['sm', 'md', 'lg']}
+        fontSize={['sm', 'sm', 'md', 'lg', 'xl', '4xl']}
       >
         {title}
       </Text>
-      <Text fontSize={['xs', 'xs', 'sm']} color={'blackAlpha.700'}>
+      <Text fontSize={['xs', 'xs', 'sm', 'md', 'md', '3xl']} color={'blackAlpha.700'}>
         {where}
       </Text>
       <Text
-        fontSize={['sm', 'sm', 'md', 'lg']}
+        fontSize={['lg', 'lg', 'xl', '2xl', '2xl', '4xl']}
         whiteSpace={'pre-wrap'}
-        mb={['6px']}
         mx={['5px']}
+        color={'black'}
       >
         {body}
+      </Text>
+      <Text
+       fontSize={['lg', 'lg', 'xl', '2xl', '2xl', '4xl']}
+        whiteSpace={'pre-wrap'}
+        mx={['5px']}
+        color={'black'}
+      >
+        {stacks}
       </Text>
     </Flex>
   )

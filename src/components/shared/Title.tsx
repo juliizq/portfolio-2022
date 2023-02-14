@@ -6,7 +6,7 @@ export default function Title ({ child }: ITitle) {
   return (
     <Text
       fontWeight={'600'}
-      fontSize={{ base: 'xl', md: '2xl', lg: '3xl', xl: '4xl' }}
+      fontSize={['xl', '2xl', '3xl', '4xl', '4xl', '6xl']}
       letterSpacing={'.7px'}
     >
       {child}

@@ -14,7 +14,7 @@ export default function InfoProject ({
     <VStack alignItems={['center', 'center', 'flex-start']}>
       <Flex gap={['1']} alignItems={'center'}>
         <Link href={urlProject} isExternal>
-          <Text as={'span'} fontSize={['lg', 'xl', '3xl']} fontWeight="600">
+          <Text as={'span'} fontSize={['lg', 'xl', '3xl', '3xl', '3xl', '4xl']} fontWeight="600">
             {title}
           </Text>
         </Link>
@@ -24,7 +24,7 @@ export default function InfoProject ({
           placement="top"
           label={'Website'}
           bg={'black'}
-          fontSize={{ base: 'sm', md: 'lg', lg: 'xl', xl: '2xl' }}
+          fontSize={['sm', 'lg', 'xl', '2xl']}
           mb="1"
         >
         <Link href={urlProject} isExternal>
@@ -45,7 +45,11 @@ export default function InfoProject ({
           </Link>
         </Tooltip>
       </Flex>
-      <Text>{description}</Text>
+      <Text
+        fontSize={['sm', 'md', 'md', 'md', 'xl', '3xl']}
+      >
+        {description}
+      </Text>
     </VStack>
   )
 }

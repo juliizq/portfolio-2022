@@ -9,7 +9,7 @@ export default function Logo () {
         _hover={{
           textDecoration: 'none'
         }}
-        fontSize={['sm', 'md', 'lg', 'lg']}
+        fontSize={['sm', 'sm', 'sm', 'md', 'lg', '3xl']}
         color={'primary'}
       >
         Juliana Izquierdo

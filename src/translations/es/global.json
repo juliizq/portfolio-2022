@@ -17,13 +17,11 @@
   },
   "about" : {
     "about" : "SOBRE MÍ",
-    "about-me" : "Tengo 23 años,\n soy de Argentina 🌞 \n y actualmente vivo en Bélgica.",
-    "years" : "Tengo 23 años,",
-    "from" : "soy de ",
-    "argentina" : "Argentina 🌞",
-    "currently" : "y actualmente vivo en Bélgica.",
-    "thanks-to" : "Gracias a las diferentes experiencias de estos últimos años, \n aprendí a ser autodidacta, a poder adaptarme fácilmente a nuevos lugares y equipos de trabajo, y a desarrollar \n una reflexión orientada a la resolución de problemas.",
-    "content-creator" : "Haber trabajado como creadora de contenido para redes sociales, \n me ayudó a mejorar mis habilidades en diseño y a tener muy presente los detalles.",
+    "about-me" : "Hola, soy Juliana 👋",
+    "front-end-web" : "desarrolladora front-end/web",
+    "argentine-belgium": "de Argentina 🌞 viviendo Bélgica.",
+    "thanks-to" : "Gracias a las diferentes experiencias de estos últimos años, \naprendí a ser autodidacta, a desarrollar una reflexión orientada a la resolución de problemas, a poder adaptarme fácilmente a nuevos lugares y equipos de trabajo.",
+    "content-creator" : "Haber trabajado como creadora de contenido para redes sociales, \nme ayudó a mejorar mis habilidades en diseño y a tener muy presente los detalles.",
     "code-design" : "Codigo y diseño es lo que más disfruto de hacer 💻.",
     "languages" : "Hablo español, inglés y francés.",
     "work-motivation" : "Más que motivada en poner en practicas mis conocimientos y a seguir aprendiendo 💪."
@@ -58,7 +56,7 @@
   "stacks" : {
     "interests" : "interés en",
     "animations" : "ANIMACIONES", 
-    "graphic" : "DISEÑO GRÁFICO",
+    "graphic" : "ACCESIBILIDAD",
     "responsive" : "DISEÑO RESPONSIVO"
   },
   "projects" : {

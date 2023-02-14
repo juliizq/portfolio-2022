@@ -17,7 +17,7 @@ export default function Projects () {
   return (
     <Box>
       <Flex flexDirection={'column'}>
-        <Box ml={['50px']} mb={['5px']}>
+        <Box mb={['5px']}>
           <Title child={t('projects.projects')} />
         </Box>
         <Flex flexGrow={'1'}>
@@ -53,7 +53,7 @@ export default function Projects () {
             display={'inline-flex'}
             bgColor="black"
             color="white"
-            fontSize={{ base: 'xs', md: 'md', lg: 'md' }}
+            fontSize={['xs', 'md', 'md', 'md', 'md', '3xl']}
             fontWeight={'500'}
             p={'5px 10px'}
           >

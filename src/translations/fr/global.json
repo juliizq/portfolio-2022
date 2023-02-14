@@ -17,13 +17,11 @@
   },
   "about" : {
     "about" : "PROPOS DE MOI",
-    "about-me" : "J'ai 23 ans, \n je viens d'Argentine 🌞 \n et je vis actuellement en Belgique.",
-    "years" : "J'ai 23 ans,",
-    "from" : "je viens d'",
-    "argentina" : "Argentine 🌞",
-    "currently" : "et je vis actuellement en Belgique.",
-    "thanks-to" : "Grâce aux différentes expériences de ces dernières années, j'ai appris à être autodidacte, \n à pouvoir m'adapter facilement \n à de nouveaux lieux et équipes de travail, et à développer une réflexion \n orientée vers la résolution de problèmes.",
-    "content-creator" : "Avoir travaillé en tant que créatrice de contenu pour les réseaux sociaux \n m'a aidé à améliorer mes compétences en design et à garder les détails à l'esprit.",
+    "about-me" : "Hola 👋 je suis Juliana",
+    "front-end-web" : "développeur front-en/web",
+    "argentine-belgium": "argentine 🌞 basé en Belgique.",
+    "thanks-to" : "Grâce aux différentes expériences de ces dernières années, \nj'ai appris à être autodidacte, à développer une réflexion orientée vers la résolution de problèmes, à pouvoir m'adapter facilement à de nouveaux lieux et équipes de travail.",
+    "content-creator" : "Avoir travaillé en tant que créatrice de contenu pour les réseaux sociaux \nm'a aidé à améliorer mes compétences en design et à garder les détails à l'esprit.",
     "code-design" : "Code et design sont les choses que j'aime le plus faire 💻.",
     "languages" : "Je parle espagnol, anglais et français.",
     "work-motivation" : "Plus que motivée à mettre en pratique mes connaissances et à continuer à apprendre 💪."
@@ -58,7 +56,7 @@
   "stacks" : {
     "interests" : "intérêts",
     "animations" : "ANIMATIONS", 
-    "graphic" : "GRAPHISME",
+    "graphic" : "ACCESSIBILITÉ",
     "responsive" : "DESIGN RESPONSIVE"
   },
   "projects" : {

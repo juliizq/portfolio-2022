@@ -1,49 +1,67 @@
 import React from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import { Box, Flex, Text } from '@chakra-ui/react'
+import { Box, Flex, Text, Center } from '@chakra-ui/react'
+import AnimatedText from './Hero/AnimatedText'
+import { useTranslation } from 'react-i18next'
 
 export default function AnimatedLogo () {
-  const variants = {
-    visible: {
-      x: '0',
-      opacity: 1,
-      transition: {
-        duration: '1.2'
-      }
+  const [t, i18n] = useTranslation('global')
+
+  const container = {
+    initial: {
+      opacity: 0
     },
-    animation: {
-      y: '50px',
-      opacity: 0,
-      transition: {
-        ease: 'easeInOut',
-        duration: '1.2',
-        delay: 0.5
-      }
+    visible: (i = 1) => ({
+      opacity: 1,
+      transition: { staggerChildren: 0.2, delayChildren: 0.1 * i }
+    })
+  }
+
+  const background = {
+    visible: { opacity: 1 },
+    exit: {
+      x: '-100px',
+      transition: { duration: 0.85 }
     }
   }
 
   return (
-    <Flex
-      h={['100vh']}
-      w={['100wv']}
-      justifyContent={'center'}
-      alignItems={'center'}
-    >
-      <AnimatePresence>
+    <AnimatePresence>
+      <Flex
+        h={['100vh']}
+        w={['100wv']}
+        justifyContent={'center'}
+        alignItems={'center'}
+        bgColor={'primary'}
+        as={motion.div}
+        variants={background}
+      >
         <Box overflow={'hidden'}>
-          <Text
-            as={motion.p}
-            variants={variants}
-            initial={'visible'}
-            animate={'animation'}
-            exit={{ opacity: 0 }}
-            fontSize={['lg', 'xl', '2xl', '3xl', '4xl']}
-            color={'primary'}
-          >
-            Juliana Izquierdo
-          </Text>
+          <Center flexDirection={'column'} h={'100%'}>
+            <Flex
+              zIndex={'10'}
+              as={motion.div}
+              overflow={'hidden'}
+              variants={container}
+              initial="hidden"
+              animate="visible"
+              flexDirection={'column'}
+              alignItems={'center'}
+            >
+              <Flex flexDirection={'row'} whiteSpace={'pre-wrap'}>
+                <AnimatedText text={t('hero.code')} />
+                <AnimatedText text={t('hero.and')} />
+                <AnimatedText text={t('hero.design')} />
+              </Flex>
+              <Flex flexDirection={'row'} whiteSpace={'pre-wrap'}>
+                <AnimatedText text={t('hero.create')} />
+                <AnimatedText text={t('hero.and')} />
+                <AnimatedText text={t('hero.develop')} />
+              </Flex>
+            </Flex>
+          </Center>
         </Box>
-      </AnimatePresence>
-    </Flex>
+      </Flex>
+    </AnimatePresence>
   )
 }

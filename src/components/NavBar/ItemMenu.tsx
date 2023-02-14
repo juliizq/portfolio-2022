@@ -9,14 +9,11 @@ export default function ItemMenu ({ child }: IItemDesktop) {
 			cursor={'pointer'}
 			style={{ textDecoration: 'none' }}
 		  display={'inline-block'}
-			backgroundImage={'linear-gradient(#5C2DFF 0 0)'}
-			backgroundPosition={'right -100% bottom 0;'}
-			backgroundSize={'200% 1.5px'}
-			backgroundRepeat={'no-repeat'}
+			transition= {'0.2s'}
 			_hover={{
-			  backgroundPosition: 'left -100% bottom 0',
-			  transition: 'background-position 0.6s'
-			}}>
+			  color: 'primary'
+			}}
+			>
 			{child}
     </Box>
 

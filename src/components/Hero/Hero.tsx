@@ -69,47 +69,6 @@ export default function Hero () {
           <AnimatedText text={t('hero.and')} />
           <AnimatedText className='underline' text={t('hero.develop')} />
         </Flex>
-        {/* <Text
-          className="text"
-          color={'black'}
-          fontSize={{ base: '3xl', md: '5xl', lg: '6xl', xl: '8xl' }}
-        >
-          <span
-            // ref={el1}
-          >
-            {t('hero.code')}
-          </span>
-          <span
-            // ref={el2}
-          >
-            &nbsp;{t('hero.and')}
-          </span>
-          &nbsp;
-          <span
-            // ref={el3}
-            className={'underline'}
-          >
-            {t('hero.design')}
-          </span>
-          <br />
-          <span
-            // ref={el4}
-          >
-            {t('hero.create')}
-          </span>
-          <span
-            // ref={el5}
-          >
-            &nbsp;{t('hero.and')}
-          </span>
-          &nbsp;
-          <span
-            // ref={el6}
-            className={'underline'}
-          >
-            {t('hero.develop')}
-          </span>
-        </Text> */}
       </Flex>
       <Box
         as={motion.div}

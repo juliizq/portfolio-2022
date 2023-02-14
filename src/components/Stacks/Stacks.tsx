@@ -5,7 +5,7 @@ import Technolgies from './Technolgies'
 
 export default function Stacks () {
   return (
-    <Flex flexDirection={['column', 'row', 'row']} h={['100%', '70%', '']} justifyContent={'center'} overflow={'hidden'}>
+    <Flex flexDirection={['column', 'row', 'row']} h={['100%', '70%', '70%']} justifyContent={'center'} overflow={'hidden'}>
       <Technolgies />
       <Interest />
     </Flex>

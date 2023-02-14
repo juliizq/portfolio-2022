@@ -19,8 +19,8 @@ export default function AnimatedText ({ text, className }: IAnimatedText) {
   return (
     <Text
       className="text"
-      color={'black'}
-      fontSize={{ base: '3xl', md: '5xl', lg: '6xl', xl: '8xl' }}
+      color={'white'}
+      fontSize={['2xl', '3xl', '4xl', '5xl', '6xl', '7xl']}
       overflow={'hidden'}
     >
       <motion.span

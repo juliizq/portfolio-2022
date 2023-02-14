@@ -9,6 +9,7 @@ html, body {
   max-height: 100vh;
   scroll-behavior: smooth;
   /* overflow-x: hidden; */
+  color: '#303030';
 }
 
 section{

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { Box, ChakraProvider, Flex } from '@chakra-ui/react'
-import Hero from './components/Hero/Hero'
 import customTheme from './theme'
 import Header from './components/Header'
 import Languages from './components/Languages'
@@ -26,87 +25,92 @@ function App () {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 1500)
+    }, 2000)
   }, [])
 
   return (
     <ChakraProvider theme={customTheme}>
-        <Box className="App">
-          {loading
-            ? (<AnimatedLogo />)
-            : (<Box>
-              <Header />
-              <Box as="main" zIndex={'-999'}>
-                <Flex
-                  justifyContent={'space-between'}
-                  bottom={{ base: '15px', md: '20px' }}
-                  right={{ base: '10px', md: '20px' }}
-                >
-                  <ScrollToTop
-                    smooth
-                    style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      backgroundColor: 'transparent',
-                      bottom: 'inherit',
-                      right: 'inherit',
-                      boxShadow: 'none'
-                    }}
-                  />
-                  <Languages />
-                </Flex>
-                <Box as="section" id="hero" h={'100vh'}>
-                  <Hero />
-                </Box>
-                <Box
-                  as="section"
-                  id="about"
-                  pt={['15px', '']}
-                  top={['-60px', '-65px', '-80px']}
-                  h={'100vh'}
-                  mb={['80px', '20px', '40px']}
-                >
-                  <About />
-                </Box>
-                <Box
-                  id="studies"
-                  as="section"
-                  // h={'100vh'}
-                  p={['0 3%', '0 3%', '0 5%']}
-                  mb={['10px', '20px', '30px']}
-                >
-                  <Experiences />
-                </Box>
-                <Flex
-                  p={['0 3%', '0 3%', '0 5%']}
-                  as="section"
-                  id="stacks"
-                  flexDirection={'column'}
-                  justifyContent={'center'}
-                  h={'100vh'}
-                  my={['40px', '20px']}
-                >
-                  <Stacks />
-                </Flex>
-                <Flex
-                  as="section"
-                  id="projects"
-                  h={'100vh'}
-                  p={['0 3%', '0 3%', '0 5%']}
-                  flexDirection={'column'}
-                  justifyContent={'center'}
-                >
-                  <Projects />
-                </Flex>
-                <Box as="section" h={['97vh']} id="contact">
-                  <Contact />
-                </Box>
+      <Box className="App">
+        {loading
+          ? (
+          <AnimatedLogo />
+            )
+          : (
+          <Box>
+            <Header />
+            <Box as="main" zIndex={'-999'}>
+              <Flex
+                justifyContent={'space-between'}
+                bottom={{ base: '15px', md: '20px' }}
+                right={{ base: '10px', md: '20px' }}
+              >
+                <ScrollToTop
+                  smooth
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    backgroundColor: 'transparent',
+                    bottom: 'inherit',
+                    right: 'inherit',
+                    boxShadow: 'none'
+                  }}
+                />
+                <Languages />
+              </Flex>
+              <Flex
+                as="section"
+                id="about"
+                alignItems={'center'}
+                p={['0 4%', '0 5%', '0 6%']}
+                py={['20%', '25%']}
+                h={['', '100vh']}
+              >
+                <About />
+              </Flex>
+              <Box
+                id="studies"
+                as="section"
+                minH={'100vh'}
+                p={['0 4%', '0 5%', '0 6%']}
+                my={['100px', '40px', '50px', '60px']}
+              >
+                <Experiences />
               </Box>
-              <Footer />
+              <Flex
+                p={['0 4%', '0 5%', '0 6%']}
+                as="section"
+                id="stacks"
+                flexDirection={'column'}
+                justifyContent={'center'}
+                h={['', '100vh']}
+                my={['40px', '20px']}
+              >
+                <Stacks />
+              </Flex>
+              <Flex
+                as="section"
+                id="projects"
+                h={'100vh'}
+                p={['0 3%', '0 3%', '0 5%']}
+                flexDirection={'column'}
+                justifyContent={'center'}
+              >
+                <Projects />
+              </Flex>
+              <Box
+                as="section"
+                h={['100vh', '90vh']}
+                id="contact"
+                p={['0 4%', '0 5%', '0 6%']}
+              >
+                <Contact />
+              </Box>
             </Box>
-              )}
-        </Box>
+            <Footer />
+          </Box>
+            )}
+      </Box>
     </ChakraProvider>
   )
 }

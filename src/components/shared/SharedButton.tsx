@@ -55,7 +55,7 @@ export default function SharedButton ({
       borderRadius='13px'
       bgColor={theme.bgColor}
       color='black'
-      fontSize={sizeButton.fontSize}
+      fontSize={['xs', 'sm', 'md', 'md', 'lg', '2xl']}
       fontWeight={'400'}
       leftIcon={leftIcon}
       rightIcon={rightIcon}

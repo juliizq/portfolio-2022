@@ -1,4 +1,4 @@
-import { Box, Text } from '@chakra-ui/react'
+import { Box, Flex, Text } from '@chakra-ui/react'
 import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import Studies from './Studies'
@@ -24,19 +24,22 @@ export default function Experiences () {
   }
 
   return (
-    <Box mt={'15px'} mb={['10px']}>
-      <Box mb={['10px', '15px']}>
+    <Flex
+      flexDirection={'column'}
+      justifyContent={'center'}
+      h={'100%'}
+    >
+      <Box mb={['20px', '30px']}>
         <Text
           as={'span'}
           id={state.studies}
           cursor={'pointer'}
           fontWeight={'600'}
-          fontSize={{ base: 'xl', md: '2xl', lg: '3xl', xl: '4xl' }}
+          fontSize={['xl', '2xl', '3xl', '4xl', '4xl', '6xl']}
           mb={'10px'}
           style={{ opacity: stateShow === state.studies ? '1' : '0.4' }}
           _hover={{
-            color: stateShow === state.studies ? '' : 'black',
-            opacity: stateShow === state.studies ? '' : '1'
+            color: stateShow === state.studies ? '' : 'primary'
           }}
           onClick={handleClickShow}
           transition={'all 0.3s ease-in-out'}
@@ -46,7 +49,7 @@ export default function Experiences () {
         </Text>
         <Text
           as={'span'}
-          fontSize={{ base: 'xl', md: '2xl', lg: '3xl', xl: '2rem' }}
+          fontSize={['xl', '2xl', '3xl', '4xl', '4xl', '6xl']}
           fontWeight={'600'}
           mx={'5px'}
         >
@@ -57,12 +60,11 @@ export default function Experiences () {
           id={state.works}
           cursor={'pointer'}
           fontWeight={'600'}
-          fontSize={{ base: 'xl', md: '2xl', lg: '3xl', xl: '4xl' }}
+          fontSize={['xl', '2xl', '3xl', '4xl', '4xl', '6xl']}
           mb={'10px'}
           textAlign="start"
           _hover={{
-            opacity: stateShow == state.works ? '' : '1',
-            color: stateShow == state.works ? '' : 'black'
+            color: stateShow == state.works ? '' : 'primary'
           }}
           onClick={handleClickShow}
           style={{ opacity: stateShow == state.works ? '1' : '0.4' }}
@@ -73,6 +75,6 @@ export default function Experiences () {
       </Box>
       {stateShow == state.studies && <Studies />}
       {stateShow == state.works && <Works />}
-    </Box>
+    </Flex>
   )
 }

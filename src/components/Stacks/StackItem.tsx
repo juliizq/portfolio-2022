@@ -31,7 +31,7 @@ export default function StackItem ({ bgColor, child }: IStacksItem) {
     <Flex
       as={motion.div}
       borderColor="black"
-      border={['1px', '1px', '2px']}
+      border={'1px'}
       borderRadius="13px"
       bgColor={theme.bgColor}
       p={'5px 10px'}
@@ -42,7 +42,7 @@ export default function StackItem ({ bgColor, child }: IStacksItem) {
     >
       <Text
         letterSpacing={['-.8px']}
-        fontSize={['md', 'lg', 'xl', '2xl', '3xl']}
+        fontSize={['md', 'lg', 'xl', '2xl', '3xl', '5xl']}
       >
         {child}
       </Text>

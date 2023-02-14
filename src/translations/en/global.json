@@ -17,12 +17,11 @@
   },
   "about" : {
     "about" : "ABOUT",
-    "about-me" : "I'm 23 years old,\n I am from Argentine 🌞 \n and I currently live in Belgium.",
-    "from" : "I am from ",
-    "argentina" : "Argentine 🌞",
-    "currently" : "and I currently live in Belgium.",
-    "thanks-to" : "Thanks to the different experiences of recent years, I learned to be self-taught, \n to be able to adapt easily to new places and work teams, \n and to develop a reflection oriented to solving problems.",
-    "content-creator" : "Working as a social media content creator \n helped me improve my design skills and keep details in mind.",
+    "about-me" : "Hola 👋 I'm Juliana,",
+    "front-end-web" : "front-end/web developer",
+    "argentine-belgium": "from Argentine 🌞 based in Belgium.",
+    "thanks-to" : "Thanks to the different experiences of recent years,\nI learned to be self-taught, \nto be able to adapt easily to new places and work teams \nand to develop a reflection oriented to solving problems.",
+    "content-creator" : "Working as a social media content creator \nhelped me improve my design skills and keep details in mind.",
     "code-design" : "Code and design, that’s what I enjoy more doing 💻.",
     "languages" : "I speak spanish, english and french.",
     "work-motivation" : "More than motivated to put into practice my knowledge and to continue learning 💪."
@@ -57,7 +56,7 @@
   "stacks" : {
     "interests" : "interest in",
     "animations" : "ANIMATIONS", 
-    "graphic" : "GRAPHIC DESIGN",
+    "graphic" : "ACCESSIBILITY",
     "responsive" : "RESPONSIVE DESIGN"
   },
   "projects" : {
