@@ -10,6 +10,7 @@ import Portfolio from './Portfolio'
 import LandingAgency from './LandingAgency'
 import Title from '../shared/Title'
 import ProductCatalog from './ProductCatalog'
+import PixelWeather from './PixelWeather'
 
 export default function Projects () {
   const [t, i18n] = useTranslation('global')
@@ -30,6 +31,9 @@ export default function Projects () {
             modules={[Navigation, Pagination, Mousewheel, Keyboard]}
             className="mySwiper"
           >
+            <SwiperSlide>
+              <PixelWeather />
+            </SwiperSlide>
             <SwiperSlide>
               <ProductCatalog />
             </SwiperSlide>

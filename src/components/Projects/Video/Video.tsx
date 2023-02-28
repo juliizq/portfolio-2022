@@ -1,6 +1,5 @@
 import React from 'react'
 import { Flex } from '@chakra-ui/react'
-import LandingPreview from '../../assets/LandingPagePreview.mp4'
 import { IVideo } from '../../../interfaces/IVideo'
 import './Video.css'
 
